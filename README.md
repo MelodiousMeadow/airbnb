@@ -9,8 +9,8 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 3. [Key Insights](key-insights)
 4. [SQL Analysis](#1-sql-analysis)
 5. [Python Review Analysis](#2-python-review-analysis)
-6. [Tableau Dashboard](#3-tableau-dashboard)
-7. [Files and Structure](#files--structure)
+6. [Tableau Dashboard](tableau-dashboard)
+7. [Files and Structure](#files-abd-structure)
 
 ## Project Goals
 - Unnderstand listing availability vs. guest reviews
