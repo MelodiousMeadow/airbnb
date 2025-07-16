@@ -10,7 +10,7 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 4. [SQL Analysis](#1-sql-analysis)
 5. [Python Review Analysis](#2-python-review-analysis)
 6. [Tableau Dashboard](tableau-dashboard)
-7. [Files and Structure](#files-abd-structure)
+7. [Files and Structure](#files-and-structure)
 
 ## Project Goals
 - Unnderstand listing availability vs. guest reviews
@@ -32,7 +32,7 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 
 ### Example Plot: Sentiment Analysis
 
-## Tableau DAshboard
+## Tableau Dashboard
 
 ### Preview: 
 
