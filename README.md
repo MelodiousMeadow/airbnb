@@ -6,10 +6,10 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 
 1. [Project Goals](#project-goals)
 2. [Tools Useds](#tools-used)
-3. [Key Insights](key-insights)
+3. [Key Insights](#key-insights)
 4. [SQL Analysis](#1-sql-analysis)
 5. [Python Review Analysis](#2-python-review-analysis)
-6. [Tableau Dashboard](tableau-dashboard)
+6. [Tableau Dashboard](#3-tableau-dashboard)
 7. [Files and Structure](#files-and-structure)
 
 ## Project Goals
@@ -24,7 +24,7 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 - **Tableau** for dashboards and data storytelling
 - **Github** for collaboration
 
-  ## Key Insights
+## Key Insights
 
 ## 1 SQL Analysis
 
@@ -32,7 +32,7 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 
 ### Example Plot: Sentiment Analysis
 
-## Tableau Dashboard
+## 3 Tableau Dashboard
 
 ### Preview: 
 
