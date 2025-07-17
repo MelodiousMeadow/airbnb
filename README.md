@@ -118,13 +118,13 @@ This project uses **Python** (Pandas, scikit-learn, CatBoost, visualization libr
 
 **5. Cost vs. Satisfaction**
 - A scatterplot comparing boroughs by **average price vs. rating** shows:
-    Manhattan: Highest cost, slightly lower rating.
-    Queens & Staten Island: Lower prices, high satisfaction — indicating great value.
+    * **Manhattan:** Highest cost, slightly lower rating.
+    * **Queens & Staten Island:** Lower prices, high satisfaction — indicating **great value.**
 
 **6. Business Implications**
-Budget-conscious travelers may prefer Queens or Staten Island for great ratings at lower prices.
-Hosts in Brooklyn or Queens can leverage strong ratings and moderate pricing to increase market share.
-Manhattan hosts could improve performance by increasing responsiveness and improving guest experience.
+- **Budget-conscious travelers** may prefer Queens or Staten Island for great ratings at lower prices.
+- **Hosts in Brooklyn or Queens** can leverage strong ratings and moderate pricing to increase market share.
+- **Manhattan hosts** could improve performance by increasing responsiveness and improving guest experience.
 
 
 
