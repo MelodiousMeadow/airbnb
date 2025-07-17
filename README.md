@@ -83,6 +83,10 @@ This project uses **Python** (Pandas, scikit-learn, CatBoost, visualization libr
 
 **2. Guest Review Sentiment**
 
+
+<img width="1415" height="743" alt="Screenshot 2025-07-17 at 8 26 45 AM" src="https://github.com/user-attachments/assets/e07781eb-b954-4b0f-a638-e32bdfb5a130" />
+
+
 - Over **80%** of reviews are positive, especially in **Brooklyn and Staten Island.**
 - Common praised features include cleanliness and helpfulness (see word cloud visualization).
 
@@ -97,12 +101,13 @@ This project uses **Python** (Pandas, scikit-learn, CatBoost, visualization libr
 - Suggested improvements: incorporate seasonality, events data, and review text embeddings.
 - Data completeness (e.g., amenities, host info) impacts model accuracy.
 
-### Example Plot: Sentiment Analysis
-
 ## 3 Tableau Dashboard
 
 **1.Borough-Level Metrics**
 **Manhattan** stands out with a significantly higher price, despite having the **lowest Superhost percentage.** In contrast, **Queens and Staten Island** offer high satisfaction (4.8 rating) at much lower costs.
+
+<img width="557" height="120" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/aa730a77-a85e-4ff2-80ab-7d715cbde3b3" />
+
 
 **2. Forecast Trends**
 - The **Average Monthly Price** is projected to stay flat at $177 through March 2026.
