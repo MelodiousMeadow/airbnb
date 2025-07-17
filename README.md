@@ -19,10 +19,10 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 - Visualize insights via an interactive dashboard
 
 ## Tools Used
-- **Google BigQuery SQL** for querying Airbnb datasets
-- **Python (Pandas, Seaborn, Matplotlib)** for sentiment and visual analysis
-- **Tableau** for dashboards and data storytelling
-- **Github** for collaboration
+- **Google BigQuery** - SQL querying
+- **Python (Pandas, Seaborn, CatBoost)** - data cleaning, modeling, sentiment analysis
+- **Tableau** - data visualization 
+- **Github** - version control and sharing
 
 ## Key Insights
 
