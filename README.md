@@ -26,7 +26,7 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 
 ## Key Insights
 
-## 1. SQL Analysis
+## 1 SQL Analysis
 
 This section focuses on the SQL-based exploratory analysis that powered deeper understanding of Airbnb performance across New York City. Queries were executed using **BigQuery SQL** and laid the groundwork for data visualization and further modeling in Tableau and Python.
 
@@ -71,14 +71,62 @@ This section focuses on the SQL-based exploratory analysis that powered deeper u
 - **💡 Insight:** Hosts with **6+ listings** dominate review volume but have lower availability—indicating **strong performance and professional management.**
 
 
-
-
-
 ## 2 Python Review Analysis
+
+This project uses **Python** (Pandas, scikit-learn, CatBoost, visualization libraries) to analyze NYC Airbnb market patterns and predict listing prices.
+
+**1. Listing Price Distributrion and Market Norms**
+- Most listings priced between $100 and $150, a central pricing 'sweet spot.'
+- Sharp drop-off in listings above $200 indicating fewer luxury rentals.
+- Pricing spikes at round numbers ($100, $150, $200) suggest host anchoring behavior.
+- **Implication:** New hosts may maximize visibility/pricing success by targeting this mid-range band.
+
+**2. Guest Review Sentiment**
+
+- Over **80%** of reviews are positive, especially in **Brooklyn and Staten Island.**
+- Common praised features include cleanliness and helpfulness (see word cloud visualization).
+
+**3. Price Prediction Model (CatBoost Regression)**
+- Mean Absolute Error (MAE): $411 — average price prediction error.
+- R² Score: **0.29** — model explains ~29% of price variance.
+- Key features influencing price include: room type, location, host response rate, availability, and neighborhood.
+- Feature importance highlights critical variables for pricing decisions.
+
+**4. Model Limitations & Improvement Areas**
+- Moderate predictive power indicates room for enhancement.
+- Suggested improvements: incorporate seasonality, events data, and review text embeddings.
+- Data completeness (e.g., amenities, host info) impacts model accuracy.
 
 ### Example Plot: Sentiment Analysis
 
 ## 3 Tableau Dashboard
+
+**1.Borough-Level Metrics**
+**Manhattan** stands out with a significantly higher price, despite having the **lowest Superhost percentage.** In contrast, **Queens and Staten Island** offer high satisfaction (4.8 rating) at much lower costs.
+
+**2. Forecast Trends**
+- The **Average Monthly Price** is projected to stay flat at $177 through March 2026.
+- Forecasts appear paused after April 2026.
+
+**3. Host Responsiveness**
+- **11,665 listings (53%)** respond within an hour, of which **3,965 are Superhosts.**
+- Higher responsiveness correlates with Superhost status and likely guest satisfaction.
+
+**4. Customer Sentiment by Borough**
+- Most boroughs show over 35% positive reviews, with Queens and Staten Island edging slightly higher.
+- Sentiment is generally positive across all areas, suggesting satisfaction is not solely price-dependent.
+
+**5. Cost vs. Satisfaction**
+- A scatterplot comparing boroughs by **average price vs. rating** shows:
+    Manhattan: Highest cost, slightly lower rating.
+    Queens & Staten Island: Lower prices, high satisfaction — indicating great value.
+
+**6. Business Implications**
+Budget-conscious travelers may prefer Queens or Staten Island for great ratings at lower prices.
+Hosts in Brooklyn or Queens can leverage strong ratings and moderate pricing to increase market share.
+Manhattan hosts could improve performance by increasing responsiveness and improving guest experience.
+
+
 
 ### Preview: 
 
