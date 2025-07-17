@@ -1,6 +1,6 @@
 # Airbnb Data Analysis Project
 
-This portfolio project explores Airbnb listing data in New York City using **SQL**,**Python**, and **Tableau**. It covers trends in listing availability, guest reviews, prices, and neighborhood dynamics.
+This portfolio project explores Airbnb listing data in New York City using **SQL**,**Python**, and **Tableau**. It covers trends in listing availability, guest reviews, prices, and neighborhood dynamics from 2009-2025.
 
 ## Table of Contents
 
@@ -25,81 +25,69 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 - **Github** - version control and sharing
 
 ## Key Insights
+- **Superhosts** have higher ratings, more bookings
+- **Manhattan** listings dominate review; **Queens/Staten Island** offer better value
+- **Review sentiment** is overwhelmingly positive (>98%)
+- **Professional hosts** with 6+ listings earn more reveiws
+- Longer review comments often correlate with higher satisfaction
+- Listings priced around **100-150** are most common and attract more engagement
+- **Host responsiveness** is linked to higher satisfaction and Superhost status
+- Pricing is projected to remain **stable throughout the year**
 
-## 1 SQL Analysis
+## SQL Analysis
 
-This section focuses on the SQL-based exploratory analysis that powered deeper understanding of Airbnb performance across New York City. Queries were executed using **BigQuery SQL** and laid the groundwork for data visualization and further modeling in Tableau and Python.
+Conducted in BigQuery to explore host behavior, listing trends, and seasonal patterns.
 
-**1. Which property types and neighborhoods generate the most revenue?**
+**Sample Questions and Findings**
 
-- Used AVG(price*availability_30) with grouping and filtering.
-- 💡**Insight:** Entire unites in **Manhattan** (esp SoHo, Midtown) dominate eranings. Luxury and boutique listings significantly outperform basic accommodations.
+**1. Top-earning property types & areas:**
+Entire units in **SoHo, Midtown** lead in revenue.
 
-**2.Do Superhosts outperform non-Superhosts?**
-- Aggregated availability_30, review_scores_rating, and number_of_reviews by host_is_superhost.
-- 💡**Insight:** Superhosts have **higher occupancy, better ratings,** and **more reviews.**
+**2. Superhost performance:**
+Higher occupancy, better reviews, more guest engagement.
 
-**3. What are the seasonal availability trends for high-performing listings?**
-- Built a **CTE** to isolate high-rated listings; joined with calendar data to calculate monthly occupancy
-- Peak in May 2025: 18.4 days booked (61.3% occupancy)
-- Decline through Oct 2025 to 34.1%, reflecting seasonal slowdown
-- Slight rebound Nov–Dec 2025 (~40% occupancy)
-- 🔮 Trends after July 2025 are predictive and show continued seasonal dips through early 2026.
+**3.Review Sentiment via regex:**
+98%+reviews are positive or neutral; rare complaints center on cleanliness/noise
 
-**4. What are the most common review sentiments?**
-- Applied **regex-based text classfication** usining REGEX_CONTAINS on review comments.
-- **💡 Insight:** Over 98% of reviews are positive or neutral; complaints are rare but focus on cleanliness and noise.
+**4. Host behavior/engagement:**
+Response/acceptance >75% linked to higher review volume.
 
-**5. Do hosts with higher response/acceptance rates get more engagement?**
-- Joined listings and reviews; used COUNT, AVG, and GROUP BY on host behavior metrics.
-- **💡 Insight:** Hosts with **>75% response/acceptance rates** see significantly higher review frequency.
+**5. Comment length & satisfaction:**
+Longer reviews = better ratings.
 
-**6. Does comment length correlate with better ratings?**
-- Calculated AVG(LENGTH(comments)) per listing and bucketed by length.
-- **💡 Insight: Longer, more detailed comments** often align with higher guest satisfaction (ratings).
+**6. Price vs availability/engagement**
+Premium listings show deepr guest interaction and lower availability.
 
-**7. Is there a relationship between listing price and availability or engagement?**
-- Combined review volume, price data, and comment length.
-**💡 Insight:Premium listings** tend to have longer comments, suggesting stronger engagement; lower availability often reflects higher booking.
+**7. Neighborhood momentum**
+**Manhattan/Brooklyn** growing fast; Queens adjusting prices swiftly.
 
-**8. Which neighborhoods are growing fastest?**
-- Used CTEs and time-based grouping (EXTRACT(YEAR/MONTH)), calculated changes in volume, price, and review counts over 6 months.
-- **💡 Insight: Manhattan and Brooklyn** show the most momentum; **Queens** is adjusting prices faster than guest demand.
+**8. Host size and management**
+Hosts with 6+ listings dominate volume with pro-level performance
 
-**9. Do hosts with more listings manage them better?**
-- Grouped hosts by listing count and calculated review/availability stats.
-- **💡 Insight:** Hosts with **6+ listings** dominate review volume but have lower availability—indicating **strong performance and professional management.**
+## Python Analysis
 
+Used for EDA, sentiment analysis and price prediction modeling.
 
-## 2 Python Review Analysis
+**1. Price Distribution**
+- Listings cluster around $100-$150.
+- Spikes at $100, $150, $200 suggest host anchoring.
+- Few listings above $200. 
 
-This project uses **Python** (Pandas, scikit-learn, CatBoost, visualization libraries) to analyze NYC Airbnb market patterns and predict listing prices.
+**2. Sentiment Analysis**
 
-**1. Listing Price Distributrion and Market Norms**
-- Most listings priced between $100 and $150, a central pricing 'sweet spot.'
-- Sharp drop-off in listings above $200 indicating fewer luxury rentals.
-- Pricing spikes at round numbers ($100, $150, $200) suggest host anchoring behavior.
-- **Implication:** New hosts may maximize visibility/pricing success by targeting this mid-range band.
+<img width="1415" height="743" alt="Sentiment Chart" src="https://github.com/user-attachments/assets/e07781eb-b954-4b0f-a638-e32bdfb5a130" />
 
-**2. Guest Review Sentiment**
+- **80%+ reviews** positive
+- Common praise: cleanliness, helplness.
 
+**3. Price Prediction (CatBoost)**
+- **MAE:** $411
+- **R²:** 0.29
+- Top predictors: room type, location, host response rate, availability
 
-<img width="1415" height="743" alt="Screenshot 2025-07-17 at 8 26 45 AM" src="https://github.com/user-attachments/assets/e07781eb-b954-4b0f-a638-e32bdfb5a130" />
-
-
-- Over **80%** of reviews are positive, especially in **Brooklyn and Staten Island.**
-- Common praised features include cleanliness and helpfulness (see word cloud visualization).
-
-**3. Price Prediction Model (CatBoost Regression)**
-- Mean Absolute Error (MAE): $411 — average price prediction error.
-- R² Score: **0.29** — model explains ~29% of price variance.
-- Key features influencing price include: room type, location, host response rate, availability, and neighborhood.
-- Feature importance highlights critical variables for pricing decisions.
-
-**4. Model Limitations & Improvement Areas**
-- Moderate predictive power indicates room for enhancement.
-- Suggested improvements: incorporate seasonality, events data, and review text embeddings.
-- Data completeness (e.g., amenities, host info) impacts model accuracy.
+**4. Model Limitations**
+- Improve acuracy with seasonality, event data, review embeddings
+- Missing data (e.g. amenities) limits precision 
 
 ## 3 Tableau Dashboard
 
