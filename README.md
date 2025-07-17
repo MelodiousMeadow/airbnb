@@ -89,7 +89,7 @@ Used for EDA, sentiment analysis and price prediction modeling.
 - Missing data (e.g. amenities) limits precision 
 
 ## 3 Tableau Dashboard
-**Interactive Dashboard:** View on Tableau Public
+**Interactive Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/z.w8482/viz/airbnb_17514207758520/AirBnb)
 
 **1.Borough-Level Metrics**
 - **Manhattan**: Highest price, lowest Superhost %.
