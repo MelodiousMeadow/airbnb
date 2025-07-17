@@ -65,9 +65,8 @@ Premium listings show deepr guest interaction and lower availability.
 Hosts with 6+ listings dominate volume with pro-level performance
 
 ## Python Analysis
-
 Used for EDA, sentiment analysis and price prediction modeling.
-
+**Notebook: View Python Analysis on GitHub
 **1. Price Distribution**
 - Listings cluster around $100-$150.
 - Spikes at $100, $150, $200 suggest host anchoring.
@@ -90,40 +89,53 @@ Used for EDA, sentiment analysis and price prediction modeling.
 - Missing data (e.g. amenities) limits precision 
 
 ## 3 Tableau Dashboard
+**Interactive Dashboard:** View on Tableau Public
 
 **1.Borough-Level Metrics**
-**Manhattan** stands out with a significantly higher price, despite having the **lowest Superhost percentage.** In contrast, **Queens and Staten Island** offer high satisfaction (4.8 rating) at much lower costs.
+- **Manhattan**: Highest price, lowest Superhost %.
+- **Queens/Staten Island:** Highest satisfaciton, low price = value.
 
 <img width="557" height="120" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/aa730a77-a85e-4ff2-80ab-7d715cbde3b3" />
 
 
-**2. Forecast Trends**
-- The **Average Monthly Price** is projected to stay flat at $177 through March 2026.
-- Forecasts appear paused after April 2026.
+**2. Forecasting**
+- Price flat at ~177/month through Mar 2026.
+- Forcast halts after Apr 2026
 
 **3. Host Responsiveness**
-- **11,665 listings (53%)** respond within an hour, of which **3,965 are Superhosts.**
-- Higher responsiveness correlates with Superhost status and likely guest satisfaction.
+- 53% of hosts respond within 1 hour; majority are Superhosts.
 
-**4. Customer Sentiment by Borough**
-- Most boroughs show over 35% positive reviews, with Queens and Staten Island edging slightly higher.
-- Sentiment is generally positive across all areas, suggesting satisfaction is not solely price-dependent.
+**4. Sentiment by Borough**
+- All boroughs >35% positive reviews.
+- Satisfaction not tied soely to price.
 
-**5. Cost vs. Satisfaction**
+**5. Price vs. Rating**
 - A scatterplot comparing boroughs by **average price vs. rating** shows:
     * **Manhattan:** Highest cost, slightly lower rating.
     * **Queens & Staten Island:** Lower prices, high satisfaction — indicating **great value.**
 
 **6. Business Implications**
-- **Budget-conscious travelers** may prefer Queens or Staten Island for great ratings at lower prices.
+- **Budgetconscious travelers** may prefer Queens or Staten Island for great ratings at lower prices.
 - **Hosts in Brooklyn or Queens** can leverage strong ratings and moderate pricing to increase market share.
 - **Manhattan hosts** could improve performance by increasing responsiveness and improving guest experience.
 
+## Key Takeaways & Actionable Steps
+
+Airbnb listings in NYC show clear performance patterns:
+- Superhosts earn more through higher ratings, faster response times, and more guest engagement.
+- Entire units in Manhattan lead in revenue, but Queens/Staten Island offer better value with high satisfaction at lower prices.
+- Listings priced at $100–$150 perform best; round-number pricing suggests anchoring.
+- Longer, positive reviews and high host availability are tied to guest satisfaction and booking success.
+- Seasonal demand peaks in spring, drops in fall—essential for pricing strategy.
+**Actionable Steps:**
+- **New Hosts:** Target $100–$150 range and respond quickly to guest inquiries.
+- **Improve Reviews:** Focus on cleanliness and helpfulness—top drivers of positive sentiment.
+- **Professional Hosts:** Track occupancy trends and optimize listings during peak seasons.
+- **Optimize Listings:** Use room type, location, and availability data to improve pricing accuracy.
+- **Expand Market Share:** Promote Queens/Staten Island listings to value-focused travelers.
+- **Monitor Trends:** Adjust pricing/availability with seasonal forecasts to stay competitive.
 
 
-### Preview: 
-
-## Files and Structure
 
 ```bash
 airbnb/
