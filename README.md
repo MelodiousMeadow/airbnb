@@ -35,8 +35,9 @@ This portfolio project explores Airbnb listing data in New York City using **SQL
 - Pricing is projected to remain **stable throughout the year**
 
 ## SQL Analysis
-
 Conducted in BigQuery to explore host behavior, listing trends, and seasonal patterns.
+[View SQL file on GitHub](airbnb/airbnb.sql) 
+
 
 **Sample Questions and Findings**
 
@@ -66,7 +67,8 @@ Hosts with 6+ listings dominate volume with pro-level performance
 
 ## Python Analysis
 Used for EDA, sentiment analysis and price prediction modeling.
-**Notebook: View Python Analysis on GitHub
+**Notebook: [View Python Analysis on GitHub](airbnb/airbnb.ipynb)
+
 **1. Price Distribution**
 - Listings cluster around $100-$150.
 - Spikes at $100, $150, $200 suggest host anchoring.
