@@ -5,13 +5,13 @@ This portfolio project explores Airbnb listing data in New York City (2009-2025)
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
-2.  [Tools Useds](#tools-used)
+2.  [Tools Used](#tools-used)
 3. [Key Insights](#key-insights)
 4.  [SQL Analysis](sql-analysis)
 5.  [Python Analysis](python-analysis)
 6. [Tableau Dashboard](tableau-dashboard)
 7. [Takeaways & Actionable Steps](takeaways-&-actionable-steps)
-8. [Files & Strucutre](files-&-structure)
+8. [Files & Structure](files-&-structure)
 
 ## Project Goals
 - Explore availability vs. guest interest
@@ -29,7 +29,7 @@ This portfolio project explores Airbnb listing data in New York City (2009-2025)
 - **Superhosts** have higher ratings, better engagement, more bookings
 - **Manhattan** earn most; **Queens/Staten Island** offer better value
 - **98%+ of reviews** are positive or neutral
-- **Professional hosts** with 6+ listings earn more reveiws
+- **Professional hosts** with 6+ listings earn more reviews
 - Longer review comments often correlate with higher satisfaction
 - Listings priced around **100-150** are most common and attract more engagement
 - **Fast host response times** boost satisfaciton and Superhost status
@@ -77,7 +77,7 @@ Used for exploratory analysis, sentiment classification, and price prediction.
 </div>
 
 - **80%+ reviews** are positive
-- Common praise: cleanliness, helplness.
+- Common praise: cleanliness, helpfulness.
 
 **3. Price Prediction (CatBoost)**
 - **Mean Absolute Error:** $411
@@ -85,7 +85,7 @@ Used for exploratory analysis, sentiment classification, and price prediction.
 - Top predictors: room type, location, host response rate, availability
 
 **4. Model Limitations**
-- Improve acuracy with seasonality, event data, review embeddings
+- Improve accuracy with seasonality, event data, review embeddings
 - Missing data (e.g. amenities) limits precision 
 
 ## Tableau Dashboard
@@ -98,7 +98,7 @@ Built in Tableau to visualize pricing, satisfaction, responsiveness and sentimen
 - **Queens/Staten Island:** Best value (low price, high satisfaction)
 
 **2. Forecasting**
-- Monthly rpice steady at ~$177 through March 2026
+- Monthly price steady at ~$177 through March 2026
 
 **3. Host Responsiveness**
 - 53% of hosts respond within 1 hour; majority are Superhosts
@@ -111,7 +111,7 @@ Built in Tableau to visualize pricing, satisfaction, responsiveness and sentimen
 ![Scatterplot](https://github.com/user-attachments/assets/f3668c05-ff51-46c4-ab3c-1844b66ce6a6)  
 
 - **Manhattan:** Highest cost, slightly lower rating.
-- **Queens & Staten Island:** High satisfaciton, low cost
+- **Queens & Staten Island:** High satisfaction, low cost
 
 **6. Business Implications**
 - Budget travelers benefit from outer boroughs
@@ -126,8 +126,8 @@ NYC Airbnb listings reveal patterns tied to host behavior, pricing strategy, and
 - **New Hosts:** Target $100–$150 range and respond quickly to guest inquiries
 - **Boost Reviews:** Emphasize cleanliness and guest care
 - **Professional Hosts:** Track seasonability and optimize availability
-- **Optimize Listings:** Focus on room type, location, and availability to drive pricing stratey
-- **Expand Value Markets:** Promote listings in Qeens/Saten Island to value-conscious guests
+- **Optimize Listings:** Focus on room type, location, and availability to drive pricing strategy
+- **Expand Value Markets:** Promote listings in Queens/Saten Island to value-conscious guests
 - **Plan for Seasonality:** Adjusting pricing ahead of spring surges or fall dips  
 
 ## Files and Structure
