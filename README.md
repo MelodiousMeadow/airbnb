@@ -111,7 +111,7 @@ Built in Tableau to visualize pricing, satisfaction, responsiveness and sentimen
 **Summary:**
 NYC Airbnb listings reveal patterns tied to host behavior, pricing strategy, and guest sentiment.
 
-**Actionable Steps:**
+**Action Items:**
 - **New Hosts:** Target $100–$150 range and respond quickly to guest inquiries
 - **Boost Reviews:** Emphasize cleanliness and guest care
 - **Professional Hosts:** Track seasonability and optimize availability
