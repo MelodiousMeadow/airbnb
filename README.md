@@ -72,16 +72,15 @@ Used for exploratory analysis, sentiment classification, and price prediction.
 
 **2. Sentiment Analysis:**
 
-<p align="center">
+<div align="center">
   <img width="1415" height="743" alt="Sentiment Chart" src="https://github.com/user-attachments/assets/e07781eb-b954-4b0f-a638-e32bdfb5a130" />
-</p>
-
+</div>
 
 - **80%+ reviews** are positive
 - Common praise: cleanliness, helplness.
 
 **3. Price Prediction (CatBoost)**
-- **MAE:** $411
+- **Mean Absolute Error:** $411
 - **R²:** 0.29
 - Top predictors: room type, location, host response rate, availability
 
@@ -89,51 +88,47 @@ Used for exploratory analysis, sentiment classification, and price prediction.
 - Improve acuracy with seasonality, event data, review embeddings
 - Missing data (e.g. amenities) limits precision 
 
-## 3 Tableau Dashboard
-**Interactive Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/z.w8482/viz/airbnb_17514207758520/AirBnb)
+## Tableau Dashboard
+📎 [View on Tableau Public](https://public.tableau.com/app/profile/z.w8482/viz/airbnb_17514207758520/AirBnb)
+Built in Tableau to visualize pricing, satisfaction, responsiveness and sentiment by borough.
 
 **1.Borough-Level Metrics**
-- **Manhattan**: Highest price, lowest Superhost %.
-- **Queens/Staten Island:** Highest satisfaciton, low price = value.
+- **Manhattan**: Highest price, lowest Superhost %
+- **Queens/Staten Island:** Best value (low price, high satisfaction)
 
-<img width="557" height="120" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/aa730a77-a85e-4ff2-80ab-7d715cbde3b3" />
+<div align="center">
+  <img width="557" height="120" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/aa730a77-a85e-4ff2-80ab-7d715cbde3b3" />
+</div>
+
 
 **2. Forecasting**
-- Price flat at ~177/month through Mar 2026.
-- Forcast halts after Apr 2026
+- Monthly rpice steady at ~$177 through March 2026
 
 **3. Host Responsiveness**
-- 53% of hosts respond within 1 hour; majority are Superhosts.
+- 53% of hosts respond within 1 hour; majority are Superhosts
 
 **4. Sentiment by Borough**
-- All boroughs >35% positive reviews.
-- Satisfaction not tied soely to price.
+- All boroughs >35% positive reviews
 
-**5. Price vs. Rating**
-- A scatterplot comparing boroughs by **average price vs. rating** shows:
-    * **Manhattan:** Highest cost, slightly lower rating.
-    * **Queens & Staten Island:** Lower prices, high satisfaction — indicating **great value.**
+**5. Price vs. Rating Scatterplot**
+- **Manhattan:** Highest cost, slightly lower rating.
+- **Queens & Staten Island:** High satisfaciton, low cost
 
 **6. Business Implications**
-- **Budgetconscious travelers** may prefer Queens or Staten Island for great ratings at lower prices.
-- **Hosts in Brooklyn or Queens** can leverage strong ratings and moderate pricing to increase market share.
-- **Manhattan hosts** could improve performance by increasing responsiveness and improving guest experience.
+- Budget travelers benefit from outer boroughs
+- Hosts can improve performance through responsiveness and ratings
 
-## Key Takeaways & Actionable Steps
+## Takeaways and Action Steps
 
-Airbnb listings in NYC show clear performance patterns:
-- Superhosts earn more through higher ratings, faster response times, and more guest engagement.
-- Entire units in Manhattan lead in revenue, but Queens/Staten Island offer better value with high satisfaction at lower prices.
-- Listings priced at $100–$150 perform best; round-number pricing suggests anchoring.
-- Longer, positive reviews and high host availability are tied to guest satisfaction and booking success.
-- Seasonal demand peaks in spring, drops in fall—essential for pricing strategy.
+**Summary:**
+Airbnb listings in NYC reveal patterns tied to host behavior, pricing strategy, and guest sentiment.
 **Actionable Steps:**
-- **New Hosts:** Target $100–$150 range and respond quickly to guest inquiries.
-- **Improve Reviews:** Focus on cleanliness and helpfulness—top drivers of positive sentiment.
-- **Professional Hosts:** Track occupancy trends and optimize listings during peak seasons.
-- **Optimize Listings:** Use room type, location, and availability data to improve pricing accuracy.
-- **Expand Market Share:** Promote Queens/Staten Island listings to value-focused travelers.
-- **Monitor Trends:** Adjust pricing/availability with seasonal forecasts to stay competitive.
+- **New Hosts:** Target $100–$150 range and respond quickly to guest inquiries
+- **Boost Reviews:** Emphasize cleanliness and guest care
+- **Professional Hosts:** Track seasonability and optimize availability
+- **Optimize Listings:** Focus on room type, location, and availability to drive pricing stratey
+- **Expand Value Markets:** Promote listings in Qeens/Saten Island to value-conscious guests.
+- **Plan for Seasonality:** Adjusting pricing ahead of spring surges or fall dips  
 
 ## Files and Structure
 
