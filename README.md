@@ -1,86 +1,83 @@
 # Airbnb Data Analysis Project
 
-This portfolio project explores Airbnb listing data in New York City using **SQL**,**Python**, and **Tableau**. It covers trends in listing availability, guest reviews, prices, and neighborhood dynamics from 2009-2025.
+This portfolio project explores Airbnb listing data in New York City (2009-2025) using **SQL**,**Python**, and **Tableau**. It uncovers trends in listing availability, guest reviews, pricing, and neighborhood dynamics to inform host strategy and improve guest experience.
 
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
-2. [Tools Useds](#tools-used)
+2.  [Tools Useds](#tools-used)
 3. [Key Insights](#key-insights)
-4. [SQL Analysis](sql-analysis)
-5. [Python Analysis](python-analysis)
+4.  [SQL Analysis](sql-analysis)
+5.  [Python Analysis](python-analysis)
 6. [Tableau Dashboard](tableau-dashboard)
-7. [Files and Structure](#files-and-structure)
+7. [Takeaways & Actionable Steps](takeaways-&-actionable-steps)
+8. [Files & Strucutre](files-&-structure)
 
 ## Project Goals
 - Explore availability vs. guest interest
 - Uncover pricing and seasonal trends
-- Analyze guest review sentiment
+- Analyze sentiment in guest reviews
 - Visualize insights via an interactive dashboard
 
 ## Tools Used
-- **Google BigQuery** - SQL querying
+- **Google BigQuery** - SQL querying and aggregation
 - **Python (Pandas, Seaborn, CatBoost)** - data cleaning, modeling, sentiment analysis
 - **Tableau** - data visualization 
 - **Github** - version control and sharing
 
 ## Key Insights
-- **Superhosts** have higher ratings, more bookings
-- **Manhattan** listings dominate review; **Queens/Staten Island** offer better value
-- **Review sentiment** is overwhelmingly positive (>98%)
+- **Superhosts** have higher ratings, better engagement, more bookings
+- **Manhattan** earn most; **Queens/Staten Island** offer better value
+- **98%+ of reviews** are positive or neutral
 - **Professional hosts** with 6+ listings earn more reveiws
 - Longer review comments often correlate with higher satisfaction
 - Listings priced around **100-150** are most common and attract more engagement
-- **Host responsiveness** is linked to higher satisfaction and Superhost status
+- **Fast host response times** boost satisfaciton and Superhost status
 - Pricing is projected to remain **stable throughout the year**
 
-## SQL Analysis
-Conducted in BigQuery to explore host behavior, listing trends, and seasonal patterns.
+## SQL Analysis 
+📎 [View SQL file](airbnb.sql) 
 
-[View SQL file on GitHub](airbnb.sql) 
+SQL queries in BigQuery explored host behavior, review patterns, and revenue across property types and neighborhoods.
+
+**Sample Findings**
 
 
-**Sample Questions and Findings**
+**Key Insights**
 
-**1. Top-earning property types & areas:**
-Entire units in **SoHo, Midtown** lead in revenue.
+&nbsp;&nbsp;&nbsp;**1. Top-earning property types & areas:** Entire units in SoHo, Midtown earn the most
 
-**2. Superhost performance:**
-Higher occupancy, better reviews, more guest engagement.
+&nbsp;&nbsp;&nbsp;**2. Superhost performance:** Higher occupancy and more positive reviews
 
-**3.Review Sentiment via regex:**
-98%+reviews are positive or neutral; rare complaints center on cleanliness/noise
+&nbsp;&nbsp;&nbsp;**3.Sentiment via Regex:** 98%+reviews are positive or neutral
 
-**4. Host behavior/engagement:**
-Response/acceptance >75% linked to higher review volume.
+&nbsp;&nbsp;&nbsp;**4. Host Engagement:** Response/acceptance >75% = more reviews
 
-**5. Comment length & satisfaction:**
-Longer reviews = better ratings.
+&nbsp;&nbsp;&nbsp;**5. Comment Length Matters:** Longer reviews = higher satisfaction
 
-**6. Price vs availability/engagement**
-Premium listings show deepr guest interaction and lower availability.
+&nbsp;&nbsp;&nbsp;**6. Premium Listings:** Lower availability, more guest engagement
 
-**7. Neighborhood momentum**
-**Manhattan/Brooklyn** growing fast; Queens adjusting prices swiftly.
+&nbsp;&nbsp;&nbsp;**7. Neighborhood Growth** **Manhattan/Brooklyn** growing fast; Queens adjusting prices
 
-**8. Host size and management**
-Hosts with 6+ listings dominate volume with pro-level performance
+&nbsp;&nbsp;&nbsp;**8. Host size and management** Hosts with 6+ listings show strong performance
 
 ## Python Analysis
-Used for EDA, sentiment analysis and price prediction modeling.
+📎 [View Python Analysis on GitHub](airbnb.ipynb)
 
-**Notebook:** [View Python Analysis on GitHub](airbnb.ipynb)
+Used for exploratory analysis, sentiment classification, and price prediction.
 
-**1. Price Distribution**
-- Listings cluster around $100-$150.
-- Spikes at $100, $150, $200 suggest host anchoring.
-- Few listings above $200. 
+### Highlights 
 
-**2. Sentiment Analysis**
+**1. Price Distribution:** Most listings fall between $100-$150; pricing spikes at $100, $150, $200 suggest anchoring
 
-<img width="1415" height="743" alt="Sentiment Chart" src="https://github.com/user-attachments/assets/e07781eb-b954-4b0f-a638-e32bdfb5a130" />
+**2. Sentiment Analysis:**
 
-- **80%+ reviews** positive
+<p align="center">
+  <img width="1415" height="743" alt="Sentiment Chart" src="https://github.com/user-attachments/assets/e07781eb-b954-4b0f-a638-e32bdfb5a130" />
+</p>
+
+
+- **80%+ reviews** are positive
 - Common praise: cleanliness, helplness.
 
 **3. Price Prediction (CatBoost)**
@@ -100,7 +97,6 @@ Used for EDA, sentiment analysis and price prediction modeling.
 - **Queens/Staten Island:** Highest satisfaciton, low price = value.
 
 <img width="557" height="120" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/aa730a77-a85e-4ff2-80ab-7d715cbde3b3" />
-
 
 **2. Forecasting**
 - Price flat at ~177/month through Mar 2026.
@@ -139,7 +135,7 @@ Airbnb listings in NYC show clear performance patterns:
 - **Expand Market Share:** Promote Queens/Staten Island listings to value-focused travelers.
 - **Monitor Trends:** Adjust pricing/availability with seasonal forecasts to stay competitive.
 
-
+## Files and Structure
 
 ```bash
 airbnb/
