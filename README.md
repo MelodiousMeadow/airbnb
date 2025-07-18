@@ -5,10 +5,10 @@ This portfolio project explores Airbnb listing data in New York City (2009-2025)
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
-2.  [Tools Used](#tools-used)
+2. [Tools Used](#tools-used)
 3. [Key Insights](#key-insights)
-4.  [SQL Analysis](sql-analysis)
-5.  [Python Analysis](python-analysis)
+4. [SQL Analysis](sql-analysis)
+5. [Python Analysis](python-analysis)
 6. [Tableau Dashboard](tableau-dashboard)
 7. [Takeaways & Actionable Steps](takeaways-&-actionable-steps)
 8. [Files & Structure](files-&-structure)
@@ -41,25 +41,14 @@ This portfolio project explores Airbnb listing data in New York City (2009-2025)
 SQL queries in BigQuery explored host behavior, review patterns, and revenue across property types and neighborhoods.
 
 **Sample Findings**
-
-
-**Key Insights**
-
-&nbsp;&nbsp;&nbsp;**1. Top-earning property types & areas:** Entire units in SoHo, Midtown earn the most
-
-&nbsp;&nbsp;&nbsp;**2. Superhost performance:** Higher occupancy and more positive reviews
-
-&nbsp;&nbsp;&nbsp;**3.Sentiment via Regex:** 98%+reviews are positive or neutral
-
-&nbsp;&nbsp;&nbsp;**4. Host Engagement:** Response/acceptance >75% = more reviews
-
-&nbsp;&nbsp;&nbsp;**5. Comment Length Matters:** Longer reviews = higher satisfaction
-
-&nbsp;&nbsp;&nbsp;**6. Premium Listings:** Lower availability, more guest engagement
-
-&nbsp;&nbsp;&nbsp;**7. Neighborhood Growth** **Manhattan/Brooklyn** growing fast; Queens adjusting prices
-
-&nbsp;&nbsp;&nbsp;**8. Host size and management** Hosts with 6+ listings show strong performance
+1. **Top-Earning Property Types & Areas**: Entire units in SoHo and Midtown earn the most  
+2. **Superhost Performance**: Higher occupancy and more positive reviews  
+3. **Sentiment via Regex**: 98%+ of reviews are positive or neutral  
+4. **Host Engagement**: Response/acceptance >75% = more reviews  
+5. **Comment Length**: Longer reviews = higher satisfaction  
+6. **Premium Listings**: Lower availability, more guest engagement  
+7. **Neighborhood Growth**: Manhattan/Brooklyn growing fast; Queens adjusting prices  
+8. **Host Scale**: Hosts with 6+ listings show strong performance 
 
 ## Python Analysis
 📎 [View Python Notebook](airbnb.ipynb)
