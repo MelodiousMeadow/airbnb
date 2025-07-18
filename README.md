@@ -62,7 +62,7 @@ SQL queries in BigQuery explored host behavior, review patterns, and revenue acr
 &nbsp;&nbsp;&nbsp;**8. Host size and management** Hosts with 6+ listings show strong performance
 
 ## Python Analysis
-📎 [View Python Analysis on GitHub](airbnb.ipynb)
+📎 [View Python Notebook](airbnb.ipynb)
 
 Used for exploratory analysis, sentiment classification, and price prediction.
 
@@ -108,10 +108,7 @@ Built in Tableau to visualize pricing, satisfaction, responsiveness and sentimen
 
 **5. Price vs. Rating Scatterplot**
 
-<div align="center">
-  <img width="1114" height="240" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/f3668c05-ff51-46c4-ab3c-1844b66ce6a6" />
-</div>
-
+![Scatterplot](https://github.com/user-attachments/assets/f3668c05-ff51-46c4-ab3c-1844b66ce6a6)  
 
 - **Manhattan:** Highest cost, slightly lower rating.
 - **Queens & Staten Island:** High satisfaciton, low cost
@@ -123,13 +120,14 @@ Built in Tableau to visualize pricing, satisfaction, responsiveness and sentimen
 ## Takeaways and Action Steps
 
 **Summary:**
-Airbnb listings in NYC reveal patterns tied to host behavior, pricing strategy, and guest sentiment.
+NYC Airbnb listings reveal patterns tied to host behavior, pricing strategy, and guest sentiment.
+
 **Actionable Steps:**
 - **New Hosts:** Target $100–$150 range and respond quickly to guest inquiries
 - **Boost Reviews:** Emphasize cleanliness and guest care
 - **Professional Hosts:** Track seasonability and optimize availability
 - **Optimize Listings:** Focus on room type, location, and availability to drive pricing stratey
-- **Expand Value Markets:** Promote listings in Qeens/Saten Island to value-conscious guests.
+- **Expand Value Markets:** Promote listings in Qeens/Saten Island to value-conscious guests
 - **Plan for Seasonality:** Adjusting pricing ahead of spring surges or fall dips  
 
 ## Files and Structure
