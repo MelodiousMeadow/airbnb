@@ -90,16 +90,12 @@ Used for exploratory analysis, sentiment classification, and price prediction.
 
 ## Tableau Dashboard
 📎 [View on Tableau Public](https://public.tableau.com/app/profile/z.w8482/viz/airbnb_17514207758520/AirBnb)
+
 Built in Tableau to visualize pricing, satisfaction, responsiveness and sentiment by borough.
 
 **1.Borough-Level Metrics**
 - **Manhattan**: Highest price, lowest Superhost %
 - **Queens/Staten Island:** Best value (low price, high satisfaction)
-
-<div align="center">
-  <img width="557" height="120" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/aa730a77-a85e-4ff2-80ab-7d715cbde3b3" />
-</div>
-
 
 **2. Forecasting**
 - Monthly rpice steady at ~$177 through March 2026
@@ -111,6 +107,12 @@ Built in Tableau to visualize pricing, satisfaction, responsiveness and sentimen
 - All boroughs >35% positive reviews
 
 **5. Price vs. Rating Scatterplot**
+
+<div align="center">
+  <img width="1114" height="240" alt="Screenshot 2025-07-17 at 8 29 36 AM" src="https://github.com/user-attachments/assets/f3668c05-ff51-46c4-ab3c-1844b66ce6a6" />
+</div>
+
+
 - **Manhattan:** Highest cost, slightly lower rating.
 - **Queens & Staten Island:** High satisfaciton, low cost
 
